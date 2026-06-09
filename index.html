@@ -328,7 +328,7 @@ body.dark { background: var(--dark); }
       <p class="l-closing" data-es="La puerta está entreabierta." data-en="The door is ajar.">La puerta está entreabierta.</p>
 
       <div class="l-cta-wrap">
-        <a class="l-cta" href="https://forms.gle/9jY4R1ttQMA6uazXA" target="_blank" data-es="Solicitar mi acceso" data-en="Request my access">Solicitar mi acceso</a>
+        <a class="l-cta" href="https://forms.gle/9jY4R1ttQMA6uazXA" data-href-es="https://forms.gle/9jY4R1ttQMA6uazXA" data-href-en="https://forms.gle/7hwHK2NNZ4ZL8Afi9" target="_blank" data-es="Solicitar mi acceso" data-en="Request my access">Solicitar mi acceso</a>
       </div>
 
       <p class="l-contact"><span>houseofonnaa&#64;gmail.com</span> · +34 627 21 58 88</p>
@@ -363,6 +363,9 @@ body.dark { background: var(--dark); }
     document.querySelectorAll('.lang-btn').forEach(b => b.classList.toggle('active', b.dataset.lang === l));
     document.querySelectorAll('[data-es]').forEach(el => {
       el.innerHTML = l === 'es' ? el.dataset.es : el.dataset.en;
+    });
+    document.querySelectorAll('[data-href-es]').forEach(el => {
+      el.href = l === 'es' ? el.dataset.hrefEs : el.dataset.hrefEn;
     });
     document.documentElement.lang = l;
   }
