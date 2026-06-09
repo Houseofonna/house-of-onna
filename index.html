@@ -327,8 +327,9 @@ body.dark { background: var(--dark); }
 
       <p class="l-closing" data-es="La puerta está entreabierta." data-en="The door is ajar.">La puerta está entreabierta.</p>
 
-      <div class="l-cta-wrap">
-        <a class="l-cta" href="#" onclick="window.open(lang==='es'?'https://forms.gle/9jY4R1ttQMA6uazXA':'https://forms.gle/7hwHK2NNZ4ZL8Afi9','_blank');return false;" data-es="Solicitar mi acceso" data-en="Request my access">Solicitar mi acceso</a>
+      <div class="l-cta-wrap" style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a class="l-cta" href="https://forms.gle/9jY4R1ttQMA6uazXA" target="_blank">Solicitar mi acceso</a>
+        <a class="l-cta" href="https://forms.gle/7hwHK2NNZ4ZL8Afi9" target="_blank" style="background:transparent;border:1px solid var(--burgundy);color:var(--burgundy);">Request my access</a>
       </div>
 
       <p class="l-contact"><span>houseofonnaa&#64;gmail.com</span> · +34 627 21 58 88</p>
@@ -428,7 +429,10 @@ body.dark { background: var(--dark); }
     </div>
     <div class="modal-footer" style="flex-direction:column;align-items:flex-end;gap:0.8rem;">
       <p style="font-family:'Cormorant Garamond',serif;font-size:1rem;color:#8B6B4A;letter-spacing:0.12em;margin:0;">120 € <span style="font-size:0.78rem;letter-spacing:0.2em;text-transform:uppercase;">p.p.</span></p>
-      <a class="modal-cta" href="#" onclick="window.open(lang==='es'?'https://forms.gle/9jY4R1ttQMA6uazXA':'https://forms.gle/7hwHK2NNZ4ZL8Afi9','_blank');return false;" data-es="Reservar mi sitio" data-en="Book my seat">Reservar mi sitio</a>
+      <div style="display:flex;gap:0.8rem;flex-wrap:wrap;justify-content:flex-end;">
+              <a class="modal-cta" href="https://forms.gle/9jY4R1ttQMA6uazXA" target="_blank">Reservar mi sitio</a>
+              <a class="modal-cta" href="https://forms.gle/7hwHK2NNZ4ZL8Afi9" target="_blank" style="background:transparent;border:1px solid #6B1A2A;color:#6B1A2A;">Book my seat</a>
+            </div>
     </div>
   </div>
 </div>
