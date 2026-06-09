@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>House of ŌNNA · La Cena de Apertura · 20 de junio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --burgundy: #4A1418;
+  --gold: #C4973A;
+  --gold-light: #D4A85A;
+  --stone: #C8B89A;
+  --taupe: #8A7B6E;
+  --parchment: #F5EFE6;
+  --ink: #1A0A0A;
+  --dark: #0E0608;
+}
+
+html, body {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  background: var(--dark);
+  color: var(--ink);
+  min-height: 100vh;
+}
+
+/* ── HEADER ── */
+header {
+  text-align: center;
+  padding: 3.5rem 2rem 2.5rem;
+  border-bottom: 1px solid rgba(196,151,58,0.15);
+}
+.brand {
+  font-size: 1rem;
+  letter-spacing: 0.28em;
+  color: var(--burgundy);
+  font-weight: 700;
+  display: inline-block;
+  background: var(--parchment);
+  padding: 1.2rem 2.8rem;
+}
+.brand em { color: var(--gold); font-style: italic; font-weight: 400; }
+
+/* ── HERO ── */
+.hero {
+  background: var(--parchment);
+  padding: 4rem 2rem 3.5rem;
+  text-align: center;
+  position: relative;
+}
+.hero::after {
+  content: '';
+  display: block;
+  width: 60px; height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold), transparent);
+  margin: 2rem auto 0;
+  opacity: 0.6;
+}
+.event-label {
+  display: block;
+  font-size: 0.6rem; letter-spacing: 0.48em;
+  color: var(--gold); text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+.event-title {
+  font-size: clamp(2rem, 6vw, 3.4rem);
+  font-weight: 700;
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  color: var(--burgundy);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  line-height: 1.15;
+  margin-bottom: 0.9rem;
+}
+.event-venue {
+  font-size: 0.72rem; letter-spacing: 0.22em;
+  color: var(--taupe); text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+.event-venue-sub {
+  font-size: 0.85rem; font-style: italic;
+  color: var(--taupe); letter-spacing: 0.08em;
+}
+
+/* ── CARD ── */
+.card {
+  max-width: 640px;
+  margin: 0 auto;
+  background: var(--parchment);
+  padding: 3rem 3rem 3.5rem;
+}
+@media (max-width: 600px) {
+  .card { padding: 2rem 1.4rem 2.5rem; }
+  .event-title { font-size: 1.7rem; }
+  header { padding: 2rem 1.4rem 1.8rem; }
+}
+
+/* ── DESCRIPTION ── */
+.desc {
+  font-size: 1rem; font-weight: 300;
+  line-height: 1.88; color: #3A2828;
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(200,184,154,0.3);
+}
+
+/* ── ITINERARY ── */
+.itin-title {
+  font-size: 0.6rem; letter-spacing: 0.45em;
+  color: var(--gold); text-transform: uppercase;
+  margin-bottom: 1.6rem; display: block;
+}
+.itin-item {
+  display: flex; gap: 1.4rem;
+  margin-bottom: 1.6rem;
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid rgba(200,184,154,0.18);
+}
+.itin-item:last-child { border-bottom: none; margin-bottom: 0; }
+.itin-time {
+  font-size: 0.82rem; letter-spacing: 0.08em;
+  color: var(--taupe); min-width: 3.2rem;
+  padding-top: 0.15rem; flex-shrink: 0;
+}
+.itin-content strong {
+  display: block; font-size: 1.05rem;
+  color: var(--burgundy); font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.itin-content p {
+  font-size: 0.92rem; font-weight: 300;
+  color: var(--taupe); line-height: 1.65; margin: 0;
+}
+
+/* ── PRICE + CTA ── */
+.payment-block {
+  margin-top: 2.8rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid rgba(200,184,154,0.3);
+  text-align: center;
+}
+.price-tag {
+  display: block;
+  font-size: 2rem; font-weight: 300;
+  color: var(--burgundy); letter-spacing: 0.06em;
+  margin-bottom: 0.3rem;
+}
+.price-tag span {
+  font-size: 0.72rem; letter-spacing: 0.3em;
+  text-transform: uppercase; color: var(--taupe);
+  font-weight: 400;
+}
+.price-note {
+  font-size: 0.72rem; font-style: italic;
+  color: var(--taupe); letter-spacing: 0.06em;
+  margin-bottom: 2rem; display: block;
+}
+.btn-pay {
+  display: inline-block;
+  padding: 1rem 3.2rem;
+  background: var(--burgundy);
+  color: var(--parchment);
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  font-size: 0.75rem; letter-spacing: 0.32em;
+  text-transform: uppercase; text-decoration: none;
+  transition: background 0.3s ease;
+  margin-bottom: 0.9rem;
+}
+.btn-pay:hover { background: #6B1A2A; }
+.btn-pay-note {
+  display: block; font-size: 0.65rem;
+  color: var(--taupe); letter-spacing: 0.1em;
+  font-style: italic; margin-top: 0.8rem;
+}
+
+/* ── FOOTER ── */
+footer {
+  text-align: center; padding: 2.5rem 2rem;
+  border-top: 1px solid rgba(196,151,58,0.1);
+}
+.footer-brand {
+  font-size: 0.65rem; letter-spacing: 0.38em;
+  text-transform: uppercase; color: rgba(200,184,154,0.4);
+  margin-bottom: 0.5rem; display: block;
+}
+.footer-ig a {
+  display: inline-flex; align-items: center; gap: 0.4rem;
+  color: rgba(200,184,154,0.4); text-decoration: none;
+  font-size: 0.65rem; letter-spacing: 0.15em;
+  transition: color 0.3s;
+}
+.footer-ig a:hover { color: var(--gold); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">House <em>of</em> ŌNNA</div>
+</header>
+
+<div style="background:var(--parchment);">
+  <div class="hero">
+    <span class="event-label">Evento 01 · 20 de junio</span>
+    <h1 class="event-title">La Cena de Apertura</h1>
+    <p class="event-venue">Restaurante Xalest · Concepcio by Nobis · Palma</p>
+    <p class="event-venue-sub">Luxury Boutique Hotel</p>
+  </div>
+
+  <div class="card">
+
+    <p class="desc">
+      Las 30 mujeres no están elegidas al azar. Cada una entra porque su trabajo se cruza con el de otras de la sala. Una arquitecta y una artista. Una chef creativa y una event designer. La primera cena es donde esos cruces dejan de ser teoría y aparecen las primeras colaboraciones.
+    </p>
+
+    <span class="itin-title">Itinerario de la noche</span>
+
+    <div class="itin-item">
+      <span class="itin-time">19:00</span>
+      <div class="itin-content">
+        <strong>Bienvenida en la piscina</strong>
+        <p>Welcome drink: mimosa, bellini, cava, vino blanco, tinto o rosado, vermouth con o sin alcohol, cerveza.</p>
+      </div>
+    </div>
+
+    <div class="itin-item">
+      <span class="itin-time">19:45</span>
+      <div class="itin-content">
+        <strong>Cocktail y finger food en zona Lounge</strong>
+        <p>Cuatro opciones de finger food, dos bocados de cada por persona.</p>
+      </div>
+    </div>
+
+    <div class="itin-item">
+      <span class="itin-time">21:00</span>
+      <div class="itin-content">
+        <strong>Cena en Restaurante Xalest</strong>
+        <p>Cocina mallorquina con toque contemporáneo del chef Xema Álvarez. Plato principal a elegir entre carne, pescado o vegetariano. Postre.</p>
+      </div>
+    </div>
+
+    <div class="itin-item">
+      <span class="itin-time">22:30</span>
+      <div class="itin-content">
+        <strong>Copas en el bar</strong>
+        <p>Cierre de la noche en el bar de Xalest.</p>
+      </div>
+    </div>
+
+    <div class="payment-block">
+      <span class="price-tag">120 € <span>p.p.</span></span>
+      <span class="price-note">Pago por transferencia · Wise</span>
+      <br>
+      <a class="btn-pay" href="https://wise.com/pay/r/JqNUukHECugmdbc" target="_blank" rel="noopener">
+        Confirmar mi asistencia y pagar
+      </a>
+      <span class="btn-pay-note">Al completar el pago tu plaza queda reservada.</span>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  <span class="footer-brand">House of ŌNNA · Mallorca 2026</span>
+  <div class="footer-ig">
+    <a href="https://www.instagram.com/houseofonnaa" target="_blank" rel="noopener">
+      <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+        <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+        <circle cx="12" cy="12" r="4.5"/>
+        <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/>
+      </svg>
+      @houseofonnaa
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>
