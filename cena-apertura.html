@@ -31,15 +31,17 @@ html, body {
 /* ── HEADER ── */
 header {
   text-align: center;
-  padding: 3rem 2rem 2.5rem;
-  border-bottom: 1px solid rgba(196,151,58,0.15);
+  padding: 4rem 2rem;
+  background: var(--burgundy);
 }
 .brand {
-  font-size: 1.5rem;
-  letter-spacing: 0.2em;
+  font-size: clamp(2rem, 6vw, 3.8rem);
+  letter-spacing: 0.15em;
   color: var(--parchment);
   font-weight: 700;
+  font-family: 'Cormorant Garamond', Georgia, serif;
   display: inline-block;
+  line-height: 1.2;
 }
 .brand em { color: var(--gold); font-style: italic; font-weight: 400; }
 
@@ -180,16 +182,16 @@ header {
 /* ── FOOTER ── */
 footer {
   text-align: center; padding: 2.5rem 2rem;
-  border-top: 1px solid rgba(196,151,58,0.1);
+  background: var(--burgundy);
 }
 .footer-brand {
   font-size: 0.65rem; letter-spacing: 0.38em;
-  text-transform: uppercase; color: rgba(200,184,154,0.4);
-  margin-bottom: 0.5rem; display: block;
+  text-transform: uppercase; color: rgba(245,239,230,0.5);
+  margin-bottom: 0.6rem; display: block;
 }
 .footer-ig a {
   display: inline-flex; align-items: center; gap: 0.4rem;
-  color: rgba(200,184,154,0.4); text-decoration: none;
+  color: rgba(245,239,230,0.45); text-decoration: none;
   font-size: 0.65rem; letter-spacing: 0.15em;
   transition: color 0.3s;
 }
