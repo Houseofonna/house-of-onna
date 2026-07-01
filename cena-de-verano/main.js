@@ -75,9 +75,9 @@
   }
 
   /* ---------------------------------------------------------
-     Hero: vídeo de YouTube en autoplay silencioso + botón de
-     "activar sonido". El autoplay solo funciona en mute (política
-     del navegador); el usuario activa el sonido con un clic.
+     Hero: vídeo de YouTube de fondo, autoplay silencioso y en
+     bucle. Mudo es obligatorio para que el navegador permita el
+     autoplay. Sin controles ni botón de sonido.
      --------------------------------------------------------- */
   function initHeroVideo() {
     var mount = $("[data-hero-video]");
@@ -86,37 +86,16 @@
     var id = data.videos.hero.youtubeId;
     var params = [
       "autoplay=1", "mute=1", "controls=0", "loop=1", "playlist=" + id,
-      "rel=0", "playsinline=1", "modestbranding=1",
-      "enablejsapi=1", "disablekb=1", "fs=0", "iv_load_policy=3"
+      "rel=0", "playsinline=1", "modestbranding=1", "iv_load_policy=3"
     ].join("&");
     var iframe = document.createElement("iframe");
-    iframe.src = "https://www.youtube-nocookie.com/embed/" + id + "?" + params;
+    iframe.src = "https://www.youtube.com/embed/" + id + "?" + params;
     iframe.title = data.videos.hero.label || "Vídeo de cabecera";
     iframe.allow = "autoplay; encrypted-media; picture-in-picture";
     iframe.setAttribute("frameborder", "0");
     iframe.setAttribute("tabindex", "-1");
+    iframe.referrerPolicy = "strict-origin-when-cross-origin";
     mount.appendChild(iframe);
-
-    var btn = $("[data-hero-sound]");
-    if (!btn) return;
-    var soundOn = false;
-    function post(func, args) {
-      try {
-        iframe.contentWindow.postMessage(
-          JSON.stringify({ event: "command", func: func, args: args || "" }), "*"
-        );
-      } catch (e) {}
-    }
-    btn.addEventListener("click", function () {
-      soundOn = !soundOn;
-      if (soundOn) { post("unMute"); post("setVolume", [100]); post("playVideo"); }
-      else { post("mute"); }
-      btn.classList.toggle("is-on", soundOn);
-      btn.setAttribute("aria-pressed", soundOn ? "true" : "false");
-      var lbl = btn.querySelector(".hero__sound-label");
-      if (lbl) lbl.textContent = soundOn ? "Silenciar" : "Activar sonido";
-      btn.setAttribute("aria-label", soundOn ? "Silenciar el vídeo" : "Activar sonido del vídeo");
-    });
   }
 
   /* ---------------------------------------------------------

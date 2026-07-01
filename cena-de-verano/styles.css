@@ -296,31 +296,6 @@ p.lede {
   font-size: 0.85rem;
   color: rgba(244,237,224,0.85);
 }
-.hero__sound {
-  margin-top: 1.7rem;
-  display: inline-flex;
-  align-items: center;
-  gap: 0.6rem;
-  padding: 0.7rem 1.25rem;
-  border: 1px solid rgba(252,252,238,0.45);
-  border-radius: 999px;
-  color: var(--bg);
-  font-family: var(--label);
-  text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.72rem;
-  background: rgba(24,22,17,0.28);
-  -webkit-backdrop-filter: blur(4px);
-  backdrop-filter: blur(4px);
-  transition: background .3s var(--ease-out), border-color .3s var(--ease-out);
-}
-.hero__sound:hover { background: rgba(24,22,17,0.5); border-color: rgba(252,252,238,0.9); }
-.hero__sound.is-on { border-color: var(--bg); background: rgba(252,252,238,0.14); }
-.hero__sound-ico { width: 15px; height: 15px; flex: none; }
-/* icono: por defecto (silencio) muestra la X, oculta las ondas */
-.hero__sound .hero__sound-on { display: none; }
-.hero__sound.is-on .hero__sound-off { display: none; }
-.hero__sound.is-on .hero__sound-on { display: inline; }
 .hero__scroll {
   position: absolute;
   bottom: clamp(1.4rem, 3vw, 2.2rem);
