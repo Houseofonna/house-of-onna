@@ -396,11 +396,23 @@ p.lede {
   grid-template-columns: 1fr;
 }
 .concept__num {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.concept__chapter {
   font-family: var(--serif);
-  font-size: clamp(3rem, 7vw, 5rem);
+  font-size: clamp(2rem, 4.5vw, 3rem);
   color: var(--accent-2);
-  opacity: 0.85;
   line-height: 1;
+}
+.concept__place {
+  font-family: var(--label);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.72rem;
+  line-height: 1.6;
+  color: var(--ink-mute);
 }
 .concept__text {
   font-family: var(--serif);
