@@ -215,6 +215,48 @@
   }
 
   /* ---------------------------------------------------------
+     Autoplay al entrar en pantalla: inyecta el iframe de YouTube
+     en silencio (autoplay obligatorio en mute) y con controles,
+     para cualquier [data-autoplay-frame] (p.ej. el replay).
+     --------------------------------------------------------- */
+  function initAutoplayFrames() {
+    var frames = $$("[data-autoplay-frame]");
+    if (!frames.length || !data.videos) return;
+
+    function inject(frame) {
+      if (frame.querySelector("iframe")) return;            // idempotente
+      var key = frame.getAttribute("data-video-id");
+      var video = data.videos[key];
+      if (!video) return;
+      var id = video.youtubeId;
+      var params = [
+        "autoplay=1", "mute=1", "controls=1", "loop=1", "playlist=" + id,
+        "rel=0", "playsinline=1", "modestbranding=1", "iv_load_policy=3"
+      ].join("&");
+      var iframe = document.createElement("iframe");
+      iframe.src = "https://www.youtube.com/embed/" + id + "?" + params;
+      iframe.title = video.label || "Vídeo";
+      iframe.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+      iframe.allowFullscreen = true;
+      iframe.setAttribute("frameborder", "0");
+      iframe.referrerPolicy = "strict-origin-when-cross-origin";
+      frame.innerHTML = "";
+      frame.appendChild(iframe);
+    }
+
+    if (!("IntersectionObserver" in window)) {
+      frames.forEach(inject);
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) {
+        if (e.isIntersecting) { inject(e.target); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.25 });
+    frames.forEach(function (f) { io.observe(f); });
+  }
+
+  /* ---------------------------------------------------------
      Boot
      --------------------------------------------------------- */
   function boot() {
@@ -226,6 +268,7 @@
     safe(initHeroVideo, "initHeroVideo");
     safe(initHeroParallax, "initHeroParallax");
     safe(initVideoFacades, "initVideoFacades");
+    safe(initAutoplayFrames, "initAutoplayFrames");
     document.documentElement.classList.add("is-ready");
   }
 
