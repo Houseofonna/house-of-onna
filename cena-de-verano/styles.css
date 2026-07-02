@@ -194,12 +194,19 @@ p.lede {
   align-items: center;
   justify-content: space-between;
   padding: 1.4rem var(--gutter);
-  border-bottom: 1px solid rgba(252,252,238,0.6);
+  border-bottom: 1px solid rgba(252,252,238,0.22);
   color: var(--bg);
-  mix-blend-mode: difference;
-  transition: padding .4s var(--ease-out);
+  transition: padding .4s var(--ease-out), background .4s var(--ease-out),
+              color .4s var(--ease-out), border-color .4s var(--ease-out);
 }
-.nav.is-scrolled { padding-block: 0.9rem; }
+.nav.is-scrolled {
+  padding-block: 0.9rem;
+  background: rgba(252,252,238,0.92);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  color: var(--ink);
+  border-bottom-color: var(--line);
+}
 .nav__brand {
   font-family: var(--serif);
   font-weight: 400;
