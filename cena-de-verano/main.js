@@ -83,14 +83,18 @@
     var mount = $("[data-hero-video]");
     if (!mount || mount.children.length > 0) return;          // idempotente
     if (!data.videos || !data.videos.hero) return;
-    var id = data.videos.hero.youtubeId;
+    // En móvil usamos un vídeo vertical (Short) si está definido.
+    var isMobile = window.matchMedia("(max-width: 719px)").matches;
+    var video = (isMobile && data.videos.heroMobile) ? data.videos.heroMobile : data.videos.hero;
+    if (isMobile && data.videos.heroMobile) mount.classList.add("hero__video--vertical");
+    var id = video.youtubeId;
     var params = [
       "autoplay=1", "mute=1", "controls=0", "loop=1", "playlist=" + id,
       "rel=0", "playsinline=1", "modestbranding=1", "iv_load_policy=3"
     ].join("&");
     var iframe = document.createElement("iframe");
     iframe.src = "https://www.youtube.com/embed/" + id + "?" + params;
-    iframe.title = data.videos.hero.label || "Vídeo de cabecera";
+    iframe.title = video.label || "Vídeo de cabecera";
     iframe.allow = "autoplay; encrypted-media; picture-in-picture";
     iframe.setAttribute("frameborder", "0");
     iframe.setAttribute("tabindex", "-1");

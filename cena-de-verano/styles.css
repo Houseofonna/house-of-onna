@@ -266,6 +266,12 @@ p.lede {
   pointer-events: none;
   opacity: 0.92;
 }
+/* Vídeo vertical (Short) para móvil: cobertura 9:16 */
+.hero__video--vertical iframe {
+  width: max(100vw, 56.25svh);
+  height: max(177.78vw, 100svh);
+  transform: translate(-50%, -50%) scale(1.18);
+}
 .hero__overlay {
   position: absolute; inset: 0;
   z-index: 1;

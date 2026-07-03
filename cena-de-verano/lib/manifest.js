@@ -18,6 +18,7 @@
     },
     videos: {
       hero: { youtubeId: "sl8gZPXflR8", label: "La Cena de Verano — House of ŌNNA" },
+      heroMobile: { youtubeId: "-BCCoyNi7UE", label: "La Cena de Verano — House of ŌNNA" },
       replay: { youtubeId: "h_8g9GaUfWM", label: "Cena de inauguración — House of ŌNNA" },
       "testimonio-1": { youtubeId: "ZxeKBf7KFFA", label: "Testimonio — House of ŌNNA" },
       "testimonio-2": { youtubeId: "DSVzMp_CgJo", label: "Testimonio — House of ŌNNA" }
