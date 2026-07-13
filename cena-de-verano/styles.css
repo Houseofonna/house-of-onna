@@ -735,6 +735,13 @@ p.lede {
 .ty-todo__item:last-child { border-bottom: 0; padding-bottom: 0; }
 .ty-todo__text { font-size: 1rem; line-height: 1.55; color: var(--ink-soft); max-width: 46ch; }
 .ty-todo__text strong { color: var(--ink); font-weight: 600; }
+.ty-todo__meta {
+  font-family: var(--label);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.62rem;
+  color: var(--accent);
+}
 .ty-todo__link {
   align-self: flex-start;
   font-family: var(--label);
