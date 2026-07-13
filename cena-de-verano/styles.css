@@ -548,11 +548,10 @@ p.lede {
 }
 .logistics__item {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  padding: 1.6rem 0;
+  grid-template-columns: 1fr;
+  gap: 0.45rem;
+  padding: 1.4rem 0;
   border-bottom: 1px solid var(--line);
-  align-items: baseline;
 }
 .logistics__key {
   font-family: var(--label);
@@ -620,7 +619,7 @@ p.lede {
   .concept__grid { grid-template-columns: 0.5fr 1fr; align-items: start; }
 }
 @media (min-width: 720px) {
-  .logistics__item { grid-template-columns: 240px 1fr; }
+  .logistics__item { grid-template-columns: 240px 1fr; gap: 1rem; align-items: baseline; padding: 1.6rem 0; }
   .testimonials__grid { grid-template-columns: 1fr 1fr; }
 }
 @media (min-width: 960px) {
