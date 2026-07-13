@@ -434,6 +434,32 @@ p.lede {
   color: var(--ink);
   max-width: 30ch;
 }
+.concept__itinerary {
+  list-style: none;
+  margin-top: clamp(2rem, 4vw, 2.8rem);
+  border-top: 1px solid var(--line);
+  max-width: 34ch;
+}
+.concept__itinerary li {
+  display: flex;
+  gap: 1.4rem;
+  align-items: baseline;
+  padding: 0.9rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.concept__time {
+  flex: none;
+  min-width: 4.4em;
+  font-family: var(--label);
+  font-size: 0.78rem;
+  letter-spacing: 0.06em;
+  color: var(--accent);
+}
+.concept__event {
+  font-family: var(--serif);
+  font-size: 1.1rem;
+  color: var(--ink);
+}
 
 .gallery {
   padding: clamp(2rem, 6vw, 4rem) 0 clamp(5rem, 10vw, 8rem);
