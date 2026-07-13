@@ -762,6 +762,37 @@ p.lede {
 }
 .ty-todo__link--pending:hover { color: var(--ink-mute); }
 
+.ty-community {
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+  padding: clamp(2rem, 5vw, 3.2rem);
+  border-radius: 3px;
+  background: var(--invert-bg);
+  color: var(--invert-ink);
+  text-align: center;
+}
+.ty-community__eyebrow { color: rgba(252,252,238,0.55); margin-bottom: 1rem; }
+.ty-community__title { color: var(--invert-ink); margin-bottom: 1rem; }
+.ty-community__text {
+  max-width: 48ch;
+  margin: 0 auto 1.9rem;
+  color: rgba(252,252,238,0.82);
+  line-height: 1.6;
+}
+.ty-community__text strong { color: var(--invert-ink); font-weight: 600; }
+.ty-community__btn {
+  display: inline-block;
+  padding: 0.9rem 2rem;
+  border: 1px solid rgba(252,252,238,0.75);
+  border-radius: 999px;
+  font-family: var(--label);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.75rem;
+  color: var(--invert-ink);
+  transition: background .3s var(--ease-out), color .3s var(--ease-out);
+}
+.ty-community__btn:hover { background: var(--invert-ink); color: var(--invert-bg); }
+
 .ty-outro {
   margin-top: clamp(2.5rem, 6vw, 4rem);
   font-family: var(--serif);
