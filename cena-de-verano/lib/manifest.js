@@ -24,11 +24,11 @@
       "testimonio-2": { youtubeId: "DSVzMp_CgJo", label: "Testimonio — House of ŌNNA" }
     },
     gallery: [
-      { src: "assets/img/galeria-01.webp", alt: "Mesa larga con velas y flores en la Cena de Inicio" },
-      { src: "assets/img/galeria-02.webp", alt: "Las invitadas en la terraza durante la cena de inauguración" },
-      { src: "assets/img/galeria-03.webp", alt: "Detalle del menú de House of ŌNNA sobre la mesa" },
-      { src: "assets/img/galeria-04.webp", alt: "Una invitada capturando la mesa con su móvil" },
-      { src: "assets/img/galeria-05.webp", alt: "Flores junto a la piscina del recinto" }
+      { src: "assets/img/galeria-01.webp", alt: "Las invitadas en la terraza" },
+      { src: "assets/img/galeria-02.webp", alt: "Las invitadas durante la cena" },
+      { src: "assets/img/galeria-03.webp", alt: "Las invitadas en el lobby" },
+      { src: "assets/img/galeria-04.webp", alt: "Conversación entre las invitadas" },
+      { src: "assets/img/galeria-05.webp", alt: "Foto de grupo de la comunidad" }
     ]
   };
 })();
