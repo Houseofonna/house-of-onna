@@ -787,6 +787,7 @@ p.lede {
 }
 .ty-todo__link--pending:hover { color: var(--ink-mute); }
 
+.ty-step__body > .ty-community { margin-top: 0; }
 .ty-community {
   margin-top: clamp(2.5rem, 6vw, 4rem);
   padding: clamp(2rem, 5vw, 3.2rem);
