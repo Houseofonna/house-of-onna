@@ -835,20 +835,34 @@ p.lede {
    11. Falcao Uno — secciones específicas
    ============================================================= */
 
-/* Enlace al menú dentro del itinerario */
-.concept__menu-link {
-  display: inline-block;
-  margin-top: 2rem;
+/* Itinerario a todo el ancho, cada grupo en su propia línea */
+.concept__schedule { margin-top: clamp(2rem, 5vw, 3.5rem); }
+.concept__itinerary { max-width: 42rem; }
+.concept__itinerary li { align-items: baseline; }
+.concept__event { display: flex; flex-direction: column; gap: 0.25rem; }
+.concept__group {
+  font-family: var(--serif);
+  font-size: clamp(1.05rem, 2.2vw, 1.3rem);
+  color: var(--ink);
+  line-height: 1.35;
+}
+
+/* Botón destacado "Ver el menú" */
+.menu-cta {
+  display: inline-flex;
+  align-items: center;
+  margin-top: clamp(1.8rem, 4vw, 2.6rem);
+  padding: 1rem 2.1rem;
+  background: var(--ink);
+  color: var(--bg);
+  border-radius: 999px;
   font-family: var(--label);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
-  font-size: 0.74rem;
-  color: var(--accent);
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 0.2em;
-  transition: color .3s var(--ease-out);
+  letter-spacing: 0.14em;
+  font-size: 0.78rem;
+  transition: background .3s var(--ease-out);
 }
-.concept__menu-link:hover { color: var(--ink); }
+.menu-cta:hover { background: var(--accent-2); }
 
 /* Sostenibilidad */
 .eco {
@@ -869,23 +883,25 @@ p.lede {
 .eco__text + .eco__text { margin-top: 1.2rem; }
 .eco__text strong { color: var(--invert-ink); font-weight: 600; }
 
-/* Colaboradores */
+/* Colaboradores — destacado */
 .collab {
-  padding: clamp(4rem, 9vw, 6.5rem) 0;
+  padding: clamp(4.5rem, 10vw, 7.5rem) 0;
   background: var(--bg-2);
+  text-align: center;
 }
+.collab__eyebrow { color: var(--ink-mute); margin-bottom: 1.8rem; }
 .collab__list {
   list-style: none;
   display: flex;
-  flex-wrap: wrap;
-  gap: 1rem 2.5rem;
-  align-items: baseline;
+  flex-direction: column;
+  gap: 0.6rem;
+  align-items: center;
 }
 .collab__item {
   font-family: var(--serif);
-  font-size: clamp(1.5rem, 4vw, 2.4rem);
+  font-size: clamp(1.9rem, 5.5vw, 3.4rem);
   color: var(--ink);
-  line-height: 1.1;
+  line-height: 1.15;
 }
 
 /* Botones (reserva con dos acciones) */

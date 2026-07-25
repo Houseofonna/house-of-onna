@@ -3,13 +3,13 @@
   window.__BRAND__ = {
     name: "House of ŌNNA",
     event: {
-      title: "El Falcao Uno",
+      title: "Capítulo III · Una tarde en el mar Mediterráneo",
       date: "20 de agosto, 2026",
       dateISO: "2026-08-20",
       location: "Falcao Uno · Club de Mar, Palma de Mallorca"
     },
     videos: {
-      hero: { youtubeId: "Cdc7oZIh2-E", label: "El Falcao Uno — House of ŌNNA" },
+      hero: { youtubeId: "KkgoELOt8Pg", label: "Una tarde en el mar Mediterráneo — House of ŌNNA" },
       replay: { youtubeId: "h_8g9GaUfWM", label: "House of ŌNNA" },
       "testimonio-1": { youtubeId: "ZxeKBf7KFFA", label: "Testimonio — House of ŌNNA" },
       "testimonio-2": { youtubeId: "DSVzMp_CgJo", label: "Testimonio — House of ŌNNA" }
