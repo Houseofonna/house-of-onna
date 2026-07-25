@@ -835,6 +835,9 @@ p.lede {
    11. Falcao Uno — secciones específicas
    ============================================================= */
 
+/* Nombres de personajes públicos en el texto del concepto */
+.concept__text strong { font-weight: 600; color: var(--ink); }
+
 /* Itinerario a todo el ancho, cada grupo en su propia línea */
 .concept__schedule { margin-top: clamp(2rem, 5vw, 3.5rem); }
 .concept__itinerary { max-width: 42rem; }
