@@ -955,6 +955,14 @@ p.lede {
   border-top: 1px solid var(--line);
 }
 .collab__item:first-child { border-top: 0; }
+.collab__logo {
+  max-width: 70%;
+  max-height: 58px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+.collab__item--text { color: var(--ink-soft); }
 @media (min-width: 640px) {
   .collab__list { grid-template-columns: 1fr 1fr; }
   .collab__item:nth-child(-n+2) { border-top: 0; }
