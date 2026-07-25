@@ -838,6 +838,40 @@ p.lede {
 /* Nombres de personajes públicos en el texto del concepto */
 .concept__text strong { font-weight: 600; color: var(--ink); }
 
+/* Página de reserva: precio, timeline, formulario */
+.ty-price__tax { font-size: 0.62em; color: var(--ink-mute); letter-spacing: 0.02em; }
+.timeline { list-style: none; display: flex; flex-direction: column; }
+.timeline__item {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.3rem;
+  padding: 1.1rem 0;
+  border-bottom: 1px solid var(--line);
+}
+.timeline__item:last-child { border-bottom: 0; }
+.timeline__when {
+  font-family: var(--label);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.66rem;
+  color: var(--accent);
+}
+.timeline__what { font-size: 1rem; line-height: 1.55; color: var(--ink-soft); max-width: 52ch; }
+.timeline__what strong { color: var(--ink); font-weight: 600; }
+.ty-form-btn { margin-top: 1.4rem; }
+.ty-form-pending {
+  margin-top: 0.9rem;
+  font-family: var(--label);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.62rem;
+  font-style: italic;
+  color: var(--ink-mute);
+}
+@media (min-width: 640px) {
+  .timeline__item { grid-template-columns: 170px 1fr; gap: 1.5rem; align-items: baseline; }
+}
+
 /* Itinerario a todo el ancho, cada grupo en su propia línea */
 .concept__schedule { margin-top: clamp(2rem, 5vw, 3.5rem); }
 .concept__itinerary { max-width: 42rem; }
@@ -866,6 +900,9 @@ p.lede {
   transition: background .3s var(--ease-out);
 }
 .menu-cta:hover { background: var(--accent-2); }
+/* en páginas ty-page, .ty-page a { color:inherit } pisaría el texto: forzamos crema */
+.ty-page .menu-cta { color: var(--bg); }
+.ty-page .menu-cta:hover { color: var(--bg); }
 
 /* Sostenibilidad */
 .eco {
