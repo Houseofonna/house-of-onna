@@ -1031,3 +1031,47 @@ p.lede {
 @media (min-width: 720px) {
   .eco__grid { grid-template-columns: 0.8fr 1fr; gap: 3rem; align-items: start; }
 }
+
+/* =============================================================
+   13. Página PARTNERS (marcas)
+   ============================================================= */
+/* Qué es House of ŌNNA */
+.about {
+  padding: clamp(5rem, 12vw, 9rem) 0;
+  background: var(--bg);
+}
+.about__grid { display: grid; grid-template-columns: 1fr; gap: 2rem; }
+.about__title { color: var(--ink); max-width: 14ch; }
+.about__text {
+  font-family: var(--serif);
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  line-height: 1.5;
+  color: var(--ink-soft);
+  max-width: 52ch;
+}
+.about__text + .about__text { margin-top: 1.2rem; }
+
+/* Cierre "Sé nuestro partner" */
+.rsvp__eyebrow { color: rgba(252, 252, 238, 0.55); margin-bottom: 1.1rem; }
+.rsvp__perks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.7rem;
+  max-width: 44rem;
+  margin: 0 auto 2.6rem;
+}
+.rsvp__perk {
+  font-family: var(--label);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-size: 0.68rem;
+  color: rgba(252, 252, 238, 0.82);
+  padding: 0.55rem 1.1rem;
+  border: 1px solid rgba(252, 252, 238, 0.28);
+  border-radius: 999px;
+}
+
+@media (min-width: 720px) {
+  .about__grid { grid-template-columns: 0.8fr 1fr; gap: 3rem; align-items: start; }
+}
