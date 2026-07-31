@@ -959,6 +959,7 @@ p.lede {
   max-width: 190px;
   object-fit: contain;
 }
+.collab__logo--wide { height: clamp(26px, 3.6vw, 38px); max-width: 230px; }
 .collab__item--text {
   font-family: var(--serif);
   font-size: clamp(1.5rem, 3.2vw, 2rem);
