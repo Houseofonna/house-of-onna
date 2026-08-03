@@ -12,8 +12,9 @@
       hero: { youtubeId: "KkgoELOt8Pg", label: "Una tarde en el mar Mediterráneo — House of ŌNNA" },
       replay: { youtubeId: "h_8g9GaUfWM", label: "House of ŌNNA" },
       capitulo2: { youtubeId: "sLvVU-Y6oJ8", label: "Capítulo II — House of ŌNNA" },
-      "testimonio-1": { youtubeId: "ZxeKBf7KFFA", label: "Testimonio — House of ŌNNA" },
-      "testimonio-2": { youtubeId: "DSVzMp_CgJo", label: "Testimonio — House of ŌNNA" }
+      "testimonio-1": { youtubeId: "6uw-bddYJVU", label: "Susana Ramisa — Testimonio House of ŌNNA" },
+      "testimonio-2": { youtubeId: "q477eEJ08d8", label: "Arianna Bianchi — Testimonio House of ŌNNA" },
+      "testimonio-3": { youtubeId: "1QGNM-Jz1Xk", label: "Estefanía Moll — Testimonio House of ŌNNA" }
     },
     gallery: [
       { src: "assets/img/galeria-01.webp", alt: "Las invitadas en la terraza" },
