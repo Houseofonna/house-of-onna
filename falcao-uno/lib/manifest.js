@@ -11,6 +11,7 @@
     videos: {
       hero: { youtubeId: "KkgoELOt8Pg", label: "Una tarde en el mar Mediterráneo — House of ŌNNA" },
       replay: { youtubeId: "h_8g9GaUfWM", label: "House of ŌNNA" },
+      capitulo2: { youtubeId: "sLvVU-Y6oJ8", label: "Capítulo II — House of ŌNNA" },
       "testimonio-1": { youtubeId: "ZxeKBf7KFFA", label: "Testimonio — House of ŌNNA" },
       "testimonio-2": { youtubeId: "DSVzMp_CgJo", label: "Testimonio — House of ŌNNA" }
     },
