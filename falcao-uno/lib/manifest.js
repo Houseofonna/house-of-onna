@@ -14,7 +14,9 @@
       capitulo2: { youtubeId: "sLvVU-Y6oJ8", label: "Capítulo II — House of ŌNNA" },
       "testimonio-1": { youtubeId: "6uw-bddYJVU", label: "Susana Ramisa — Testimonio House of ŌNNA" },
       "testimonio-2": { youtubeId: "q477eEJ08d8", label: "Arianna Bianchi — Testimonio House of ŌNNA" },
-      "testimonio-3": { youtubeId: "1QGNM-Jz1Xk", label: "Estefanía Moll — Testimonio House of ŌNNA" }
+      "testimonio-3": { youtubeId: "1QGNM-Jz1Xk", label: "Estefanía Moll — Testimonio House of ŌNNA" },
+      "testimonio-4": { youtubeId: "DSVzMp_CgJo", label: "Estíbaliz Villastrigo — Testimonio House of ŌNNA" },
+      "testimonio-5": { youtubeId: "ZxeKBf7KFFA", label: "Yanina Rodríguez — Testimonio House of ŌNNA" }
     },
     gallery: [
       { src: "assets/img/galeria-01.webp", alt: "Las invitadas en la terraza" },
