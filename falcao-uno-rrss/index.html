@@ -319,6 +319,17 @@
 })();
 </script>
 
+<!-- En móvil: testimonios a tocar-para-reproducir con sonido (el reproductor es muy pequeño para el control de volumen) -->
+<script>
+(function(){
+  if (window.matchMedia && window.matchMedia("(max-width: 719px)").matches) {
+    document.querySelectorAll(".testimonials__frame[data-autoplay-frame]").forEach(function(f){
+      f.removeAttribute("data-autoplay-frame");
+      f.setAttribute("data-video-frame", "");
+    });
+  }
+})();
+</script>
 <script defer src="lib/gsap.min.js"></script>
 <script defer src="lib/ScrollTrigger.min.js"></script>
 <script defer src="lib/manifest.js?v=20260803g"></script>
