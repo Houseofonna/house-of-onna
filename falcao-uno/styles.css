@@ -1186,3 +1186,49 @@ p.lede {
 @media (min-width: 860px) {
   .social__grid { grid-template-columns: repeat(3, 1fr); gap: 1.8rem; }
 }
+
+/* =============================================================
+   Popup de reservas
+   ============================================================= */
+.popup {
+  position: fixed;
+  z-index: 200;
+  right: clamp(1.1rem, 4vw, 2rem);
+  bottom: clamp(1.1rem, 4vw, 2rem);
+  transform: translateY(22px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s var(--ease-out), transform 0.5s var(--ease-out);
+  width: min(90vw, 330px);
+  padding: 1.2rem 1.5rem 1.3rem;
+  background: var(--invert-bg);
+  color: var(--invert-ink);
+  border: 1px solid rgba(252, 252, 238, 0.18);
+  border-radius: 16px;
+  box-shadow: 0 14px 46px rgba(0, 0, 0, 0.4);
+}
+.popup.is-visible { opacity: 1; transform: translateY(0); pointer-events: auto; }
+@media (max-width: 719px) {
+  .popup {
+    top: 4.6rem; bottom: auto; right: auto; left: 50%;
+    transform: translateX(-50%) translateY(-18px);
+    width: min(92vw, 340px);
+  }
+  .popup.is-visible { transform: translateX(-50%) translateY(0); }
+}
+.popup__close {
+  position: absolute; top: 0.5rem; right: 0.7rem;
+  background: none; border: 0; cursor: pointer;
+  color: rgba(252, 252, 238, 0.55); font-size: 1.25rem; line-height: 1;
+}
+.popup__close:hover { color: var(--invert-ink); }
+.popup__label {
+  font-family: var(--label); text-transform: uppercase; letter-spacing: 0.14em;
+  font-size: 0.62rem; color: rgba(252, 252, 238, 0.55);
+}
+.popup__title {
+  font-family: var(--serif); font-size: 1.35rem; line-height: 1.15;
+  margin: 0.25rem 0 0.9rem; color: var(--invert-ink);
+}
+.popup__bar { height: 6px; border-radius: 999px; background: rgba(252, 252, 238, 0.16); overflow: hidden; }
+.popup__bar span { display: block; height: 100%; border-radius: 999px; background: var(--bg); }

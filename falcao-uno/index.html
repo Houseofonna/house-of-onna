@@ -10,8 +10,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap">
-<link rel="preload" as="image" href="assets/img/galeria-01.webp?v=20260803e" fetchpriority="high">
-<link rel="stylesheet" href="styles.css?v=20260803e">
+<link rel="preload" as="image" href="assets/img/galeria-01.webp?v=20260803h" fetchpriority="high">
+<link rel="stylesheet" href="styles.css?v=20260803h">
 </head>
 <body>
 
@@ -109,19 +109,19 @@
     <p class="eyebrow reveal" data-reveal style="margin-bottom:1.4rem">Nuestra comunidad</p>
     <div class="gallery__grid" data-gallery>
       <figure class="gallery__item reveal" data-reveal>
-        <img src="assets/img/galeria-01.webp?v=20260803e" alt="Las invitadas en la terraza" loading="eager" decoding="async">
+        <img src="assets/img/galeria-01.webp?v=20260803h" alt="Las invitadas en la terraza" loading="eager" decoding="async">
       </figure>
       <figure class="gallery__item reveal" data-reveal>
-        <img src="assets/img/galeria-02.webp?v=20260803e" alt="Las invitadas durante la cena" loading="lazy" decoding="async">
+        <img src="assets/img/galeria-02.webp?v=20260803h" alt="Las invitadas durante la cena" loading="lazy" decoding="async">
       </figure>
       <figure class="gallery__item reveal" data-reveal>
-        <img src="assets/img/galeria-03.webp?v=20260803e" alt="Las invitadas en el lobby" loading="lazy" decoding="async">
+        <img src="assets/img/galeria-03.webp?v=20260803h" alt="Las invitadas en el lobby" loading="lazy" decoding="async">
       </figure>
       <figure class="gallery__item reveal" data-reveal>
-        <img src="assets/img/galeria-04.webp?v=20260803e" alt="Conversación entre las invitadas" loading="lazy" decoding="async">
+        <img src="assets/img/galeria-04.webp?v=20260803h" alt="Conversación entre las invitadas" loading="lazy" decoding="async">
       </figure>
       <figure class="gallery__item reveal" data-reveal>
-        <img src="assets/img/galeria-05.webp?v=20260803e" alt="Foto de grupo de la comunidad" loading="lazy" decoding="async">
+        <img src="assets/img/galeria-05.webp?v=20260803h" alt="Foto de grupo de la comunidad" loading="lazy" decoding="async">
       </figure>
     </div>
   </div>
@@ -172,7 +172,7 @@
         cuidarlo.
       </p>
       <div class="eco__partner">
-        <img src="assets/img/logos/almas.png?v=20260803e" alt="Fundación Almas Marinas" loading="lazy" decoding="async">
+        <img src="assets/img/logos/almas.png?v=20260803h" alt="Fundación Almas Marinas" loading="lazy" decoding="async">
       </div>
     </div>
   </div>
@@ -212,12 +212,12 @@
   <div class="container">
     <p class="eyebrow collab__eyebrow reveal" data-reveal>En colaboración con</p>
     <ul class="collab__list reveal" data-reveal>
-      <li class="collab__item"><img class="collab__logo" src="assets/img/logos/falcao.png?v=20260803e" alt="Falcao Uno" loading="lazy" decoding="async"></li>
-      <li class="collab__item"><img class="collab__logo" src="assets/img/logos/ccclub.png?v=20260803e" alt="Calm Collective Club" loading="lazy" decoding="async"></li>
-      <li class="collab__item"><img class="collab__logo" src="assets/img/logos/tintin.png?v=20260803e" alt="Tin Tin" loading="lazy" decoding="async"></li>
-      <li class="collab__item"><img class="collab__logo" src="assets/img/logos/axartell.png?v=20260803e" alt="Can Axartell" loading="lazy" decoding="async"></li>
-      <li class="collab__item"><img class="collab__logo" src="assets/img/logos/almas.png?v=20260803e" alt="Fundación Almas Marinas" loading="lazy" decoding="async"></li>
-      <li class="collab__item"><img class="collab__logo collab__logo--wide" src="assets/img/logos/lancome.png?v=20260803e" alt="Lancôme Paris" loading="lazy" decoding="async"></li>
+      <li class="collab__item"><img class="collab__logo" src="assets/img/logos/falcao.png?v=20260803h" alt="Falcao Uno" loading="lazy" decoding="async"></li>
+      <li class="collab__item"><img class="collab__logo" src="assets/img/logos/ccclub.png?v=20260803h" alt="Calm Collective Club" loading="lazy" decoding="async"></li>
+      <li class="collab__item"><img class="collab__logo" src="assets/img/logos/tintin.png?v=20260803h" alt="Tin Tin" loading="lazy" decoding="async"></li>
+      <li class="collab__item"><img class="collab__logo" src="assets/img/logos/axartell.png?v=20260803h" alt="Can Axartell" loading="lazy" decoding="async"></li>
+      <li class="collab__item"><img class="collab__logo" src="assets/img/logos/almas.png?v=20260803h" alt="Fundación Almas Marinas" loading="lazy" decoding="async"></li>
+      <li class="collab__item"><img class="collab__logo collab__logo--wide" src="assets/img/logos/lancome.png?v=20260803h" alt="Lancôme Paris" loading="lazy" decoding="async"></li>
     </ul>
   </div>
 </section>
@@ -276,6 +276,28 @@
   <p class="footer__meta">Palma de Mallorca · Falcao Uno</p>
 </footer>
 
+<!-- Popup de reservas -->
+<div class="popup" id="capacityPopup" role="status" aria-live="polite" hidden>
+  <button class="popup__close" type="button" aria-label="Cerrar">×</button>
+  <p class="popup__label">Reservas</p>
+  <p class="popup__title">Plazas reservadas al 70%</p>
+  <div class="popup__bar"><span style="width:70%"></span></div>
+</div>
+<script>
+(function(){
+  var p = document.getElementById("capacityPopup");
+  if (!p) return;
+  try { if (sessionStorage.getItem("onnaCapacitySeen")) return; } catch(e){}
+  p.hidden = false;
+  setTimeout(function(){ p.classList.add("is-visible"); }, 1400);
+  p.querySelector(".popup__close").addEventListener("click", function(){
+    p.classList.remove("is-visible");
+    try { sessionStorage.setItem("onnaCapacitySeen", "1"); } catch(e){}
+    setTimeout(function(){ p.hidden = true; }, 500);
+  });
+})();
+</script>
+
 <!-- En móvil: testimonios a tocar-para-reproducir con sonido (el reproductor es muy pequeño para el control de volumen) -->
 <script>
 (function(){
@@ -289,7 +311,7 @@
 </script>
 <script defer src="lib/gsap.min.js"></script>
 <script defer src="lib/ScrollTrigger.min.js"></script>
-<script defer src="lib/manifest.js?v=20260803e"></script>
-<script defer src="main.js?v=20260803e"></script>
+<script defer src="lib/manifest.js?v=20260803h"></script>
+<script defer src="main.js?v=20260803h"></script>
 </body>
 </html>
