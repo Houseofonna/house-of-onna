@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap">
-<link rel="stylesheet" href="styles.css?v=20260803c">
+<link rel="stylesheet" href="styles.css?v=20260803d">
 </head>
 <body>
 
@@ -77,6 +77,43 @@
   </div>
 </section>
 
+<!-- TESTIMONIOS -->
+<section class="testimonials testimonials--sm">
+  <div class="container">
+    <p class="eyebrow testimonials--sm__eyebrow reveal" data-reveal>Lo que dicen ellas</p>
+    <div class="testimonials__grid">
+      <figure class="testimonials__item reveal" data-reveal>
+        <div class="testimonials__frame" data-autoplay-frame data-video-id="testimonio-1" role="button" tabindex="0" aria-label="Ver testimonio de Susana Ramisa">
+          <div class="testimonials__poster"></div>
+          <div class="replay__play"><span class="replay__play-circle" aria-hidden="true">▶</span></div>
+        </div>
+        <figcaption class="testimonials__name">Susana Ramisa</figcaption>
+      </figure>
+      <figure class="testimonials__item reveal" data-reveal>
+        <div class="testimonials__frame" data-autoplay-frame data-video-id="testimonio-2" role="button" tabindex="0" aria-label="Ver testimonio de Arianna Bianchi">
+          <div class="testimonials__poster"></div>
+          <div class="replay__play"><span class="replay__play-circle" aria-hidden="true">▶</span></div>
+        </div>
+        <figcaption class="testimonials__name">Arianna Bianchi</figcaption>
+      </figure>
+      <figure class="testimonials__item reveal" data-reveal>
+        <div class="testimonials__frame" data-autoplay-frame data-video-id="testimonio-3" role="button" tabindex="0" aria-label="Ver testimonio de Estefanía Moll">
+          <div class="testimonials__poster"></div>
+          <div class="replay__play"><span class="replay__play-circle" aria-hidden="true">▶</span></div>
+        </div>
+        <figcaption class="testimonials__name">Estefanía Moll</figcaption>
+      </figure>
+      <figure class="testimonials__item reveal" data-reveal>
+        <div class="testimonials__frame" data-autoplay-frame data-video-id="testimonio-4" role="button" tabindex="0" aria-label="Ver testimonio de Estíbaliz Villastrigo">
+          <div class="testimonials__poster"></div>
+          <div class="replay__play"><span class="replay__play-circle" aria-hidden="true">▶</span></div>
+        </div>
+        <figcaption class="testimonials__name">Estíbaliz Villastrigo</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
 <!-- INSCRIPCIÓN -->
 <section class="rsvp" id="acceso">
   <div class="container">
@@ -118,9 +155,20 @@
   <p class="footer__meta">Palma de Mallorca</p>
 </footer>
 
+<!-- En móvil: testimonios a tocar-para-reproducir con sonido (el reproductor es muy pequeño para el control de volumen) -->
+<script>
+(function(){
+  if (window.matchMedia && window.matchMedia("(max-width: 719px)").matches) {
+    document.querySelectorAll(".testimonials__frame[data-autoplay-frame]").forEach(function(f){
+      f.removeAttribute("data-autoplay-frame");
+      f.setAttribute("data-video-frame", "");
+    });
+  }
+})();
+</script>
 <script defer src="lib/gsap.min.js"></script>
 <script defer src="lib/ScrollTrigger.min.js"></script>
-<script defer src="lib/manifest.js?v=20260803c"></script>
-<script defer src="main.js?v=20260803c"></script>
+<script defer src="lib/manifest.js?v=20260803d"></script>
+<script defer src="main.js?v=20260803d"></script>
 </body>
 </html>
