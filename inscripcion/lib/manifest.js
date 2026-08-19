@@ -9,7 +9,7 @@
       location: "Falcao Uno · Club de Mar, Palma de Mallorca"
     },
     videos: {
-      hero: { youtubeId: "KkgoELOt8Pg", label: "Una tarde en el mar Mediterráneo — House of ŌNNA" },
+      hero: { youtubeId: "sLvVU-Y6oJ8", label: "Capítulo II — House of ŌNNA" },
       replay: { youtubeId: "h_8g9GaUfWM", label: "House of ŌNNA" },
       capitulo2: { youtubeId: "sLvVU-Y6oJ8", label: "Capítulo II — House of ŌNNA" },
       "testimonio-1": { youtubeId: "6uw-bddYJVU", label: "Susana Ramisa — Testimonio House of ŌNNA" },
