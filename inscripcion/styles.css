@@ -1346,3 +1346,17 @@ p.lede {
   gap: clamp(0.9rem, 3vw, 1.5rem);
 }
 .testimonials--sm .testimonials__name { font-size: 0.68rem; }
+
+/* Aviso destacado: líneas secundarias */
+.notice-strong__more {
+  margin-top: 1rem;
+  font-size: 1rem;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+.notice-strong__more strong { color: var(--ink); font-weight: 600; }
+.notice-strong__thanks {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--ink-mute);
+}
