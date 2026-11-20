@@ -1,0 +1,598 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="canonical" href="https://houseofonna.com/29noviembre/">
+<meta property="og:title" content="Marca personal, ventas y liderazgo · House of Ōnna">
+<meta property="og:description" content="Tres masterclasses en una mañana. Domingo 29 de noviembre, Palma de Mallorca.">
+<style>:root{color-scheme:light}body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>Marca personal, ventas y liderazgo · House of Ōnna</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Marca personal, ventas y liderazgo. Tres masterclasses en una mañana. House of Ōnna, Mallorca.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;1,400&family=Montserrat:wght@400;500;600&family=Cutive+Mono&display=swap">
+<style>
+/* Página de evento en una sola columna editorial: cabecera borgoña, programa con números romanos, cierre oxblood. Look de marca fijo (claro) en los dos temas del visor. */
+:root{
+  --borgona:#5B0B0B; --marfil:#FCF7F3; --oxblood:#4A090D; --taupe:#D8C9B6; --espresso:#29201F; --lino:#EBDFD5;
+  --hero-bg:var(--borgona); --hero-fg:var(--marfil); --hero-soft:rgba(252,247,243,.86); --hero-line:rgba(216,201,182,.45);
+  --page:var(--marfil); --ink:var(--espresso); --ink-soft:#5a4a46; --ink-mute:#7a6560; --accent:var(--borgona);
+  --alt:var(--lino); --rule:var(--taupe); --close-bg:var(--oxblood); --close-fg:var(--marfil); --close-mark:var(--taupe);
+  --f-display:"Times New Roman",Times,"Tinos",Georgia,serif;
+  --f-body:-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  --f-label:"Cutive Mono","Courier New",monospace;
+  --display-w:400; --label-size:11.5px; --label-track:.24em;
+  --btn-radius:0px;
+  color-scheme:light;
+}
+:root[data-estilo="web"]{
+  --hero-bg:#181616; --hero-fg:#FCFCEE; --hero-soft:rgba(252,252,238,.78); --hero-line:rgba(252,252,238,.22);
+  --page:#FCFCEE; --ink:#2C1107; --ink-soft:#4b362c; --ink-mute:#7b6a5f; --accent:#5B0B0B;
+  --alt:#F1ECD6; --rule:#d9d0b4; --close-bg:#181616; --close-fg:#FCFCEE; --close-mark:#d9d0b4;
+  --f-display:"Times New Roman",Times,"Tinos",Georgia,serif;
+  --f-body:-apple-system,system-ui,"Segoe UI",Helvetica,Arial,sans-serif;
+  --f-label:"Cutive Mono","Courier New",monospace;
+  --display-w:400; --label-size:11.5px; --label-track:.24em;
+  --btn-radius:999px;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--page);color:var(--ink);font-family:var(--f-body);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:60;background:var(--hero-bg)}
+.wrap{max-width:1100px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+.eyebrow{font-family:var(--f-label);font-size:var(--label-size);font-weight:500;letter-spacing:var(--label-track);text-transform:uppercase}
+.pend{background:rgba(216,201,182,.38);outline:1px dashed currentColor;outline-offset:1px;padding:0 4px}
+h1,h2,h3{text-wrap:balance}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+
+/* logo original, solo coloreado con máscara */
+.logo{display:block;background:currentColor;-webkit-mask:no-repeat center/contain;mask:no-repeat center/contain}
+.logo-mono{-webkit-mask-image:url(monograma.png);mask-image:url(monograma.png);aspect-ratio:340/375}
+.logo-word{-webkit-mask-image:url(logotipo.png);mask-image:url(logotipo.png);aspect-ratio:505/297}
+
+/* barra superior, como en la web */
+.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:50;background:var(--hero-bg);color:var(--hero-fg);border-bottom:1px solid var(--hero-line);transition:background .3s,color .3s}
+.top.solid{background:var(--page);color:var(--accent);border-bottom-color:var(--rule)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;height:68px}
+.top .logo-word{width:92px}
+.top a.link{font-family:var(--f-label);font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;text-decoration:none;padding-bottom:4px;border-bottom:1px solid currentColor}
+
+.btn{display:inline-flex;align-items:center;gap:14px;font-family:var(--f-label);font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;text-decoration:none;padding:18px 36px;border:1px solid currentColor;border-radius:var(--btn-radius);transition:background .25s,color .25s;cursor:pointer}
+.btn::after{content:"→";letter-spacing:0;font-family:var(--f-body)}
+.btn-on-dark{background:var(--hero-fg);color:var(--hero-bg);border-color:var(--hero-fg)}
+.btn-on-dark:hover{background:transparent;color:var(--hero-fg)}
+:root[data-estilo="web"] .btn-on-dark{background:transparent;color:var(--hero-fg)}
+:root[data-estilo="web"] .btn-on-dark:hover{background:var(--hero-fg);color:var(--hero-bg)}
+
+/* I · cabecera */
+.hero{background:var(--hero-bg);color:var(--hero-fg);padding-block:96px 104px;position:relative;overflow:hidden}
+.hero .mark{position:absolute;right:-60px;top:50%;width:min(46vw,460px);transform:translateY(-50%);color:var(--hero-fg);opacity:.06;pointer-events:none}
+.hero{padding-top:56px}
+.aviso{display:inline-flex;flex-wrap:wrap;align-items:center;gap:10px 16px;margin-bottom:56px;padding:13px 20px;border:1px solid var(--hero-line);background:rgba(252,247,243,.07);font-family:var(--f-label);font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--hero-fg);max-width:100%}
+.aviso .dot{width:8px;height:8px;border-radius:50%;background:var(--taupe);flex:none}
+.aviso .sep{width:1px;height:14px;background:var(--hero-line)}
+@media (max-width:560px){.aviso{font-size:11.5px;letter-spacing:.12em;padding:12px 14px;margin-bottom:40px}.aviso .sep{display:none}}
+.hero .eyebrow{color:var(--taupe);margin-bottom:30px}
+:root[data-estilo="web"] .hero .eyebrow{color:var(--hero-soft)}
+.hero h1{font-family:var(--f-display);font-weight:var(--display-w);font-size:clamp(44px,7.6vw,92px);line-height:1.03;letter-spacing:-.012em;max-width:22ch;text-wrap:wrap}
+.hero h1 em{font-style:italic;font-weight:calc(var(--display-w) - 100)}
+.hero .sub{font-family:var(--f-display);font-style:italic;font-size:clamp(19px,2.2vw,24px);line-height:1.5;max-width:32ch;margin-top:28px;color:var(--hero-soft)}
+.facts{list-style:none;display:flex;flex-wrap:wrap;gap:10px 0;margin:52px 0 48px;padding-top:26px;border-top:1px solid var(--hero-line);max-width:860px}
+.facts li{font-family:var(--f-label);font-size:12px;font-weight:500;letter-spacing:.16em;text-transform:uppercase;padding:0 20px;border-left:1px solid var(--hero-line)}
+.facts li:first-child{padding-left:0;border-left:0}
+
+/* II · para quién */
+.who{padding-block:120px}
+.who .grid{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:56px}
+.who .eyebrow{color:var(--accent);padding-top:10px}
+.who .lead{font-family:var(--f-display);font-weight:calc(var(--display-w) - 100);font-size:clamp(24px,3vw,33px);line-height:1.4;max-width:30ch}
+.who .after{margin-top:28px;max-width:52ch;color:var(--ink-soft)}
+
+/* III · programa */
+.prog{padding-block:0 110px}
+.sec-head{margin-bottom:56px}
+.sec-head .eyebrow{color:var(--accent);margin-bottom:16px}
+.sec-head h2{font-family:var(--f-display);font-weight:var(--display-w);font-size:clamp(34px,4.6vw,54px);line-height:1.08}
+.sec-head h2 em{font-style:italic}
+.mc{display:grid;grid-template-columns:minmax(0,260px) minmax(0,1fr);gap:56px;padding-block:60px;border-top:1px solid var(--rule)}
+.mc:last-child{border-bottom:1px solid var(--rule)}
+.mc .num{font-family:var(--f-display);font-weight:400;font-style:italic;color:var(--accent);font-size:92px;line-height:.9}
+.mc h3{font-family:var(--f-display);font-weight:var(--display-w);font-size:34px;line-height:1.15;margin:20px 0 12px}
+.mc .meta{font-family:var(--f-label);font-size:11.5px;font-weight:500;letter-spacing:.18em;text-transform:uppercase;color:var(--ink-mute);line-height:2.1}
+.mc .meta b{color:var(--accent);font-weight:600}
+.mc .body{min-width:0}
+.mc .body > p{font-size:16.5px;margin-bottom:26px;max-width:62ch}
+.mc .learn{font-family:var(--f-display);font-style:italic;font-size:20px;color:var(--accent);margin-bottom:8px}
+.mc ul{list-style:none;max-width:62ch}
+.mc li{position:relative;padding:12px 0 12px 32px;border-top:1px solid var(--rule);font-size:15.5px}
+.mc li::before{content:"";position:absolute;left:3px;top:24px;width:6px;height:6px;border:1px solid var(--accent);transform:rotate(45deg)}
+:root[data-estilo="web"] .mc li::before{content:"→";border:0;transform:none;top:11px;left:0;width:auto;height:auto;color:var(--ink-mute)}
+
+/* IV · ponentes */
+.speakers{background:var(--alt);padding-block:110px}
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:36px}
+.sp{min-width:0}
+.sp .photo{aspect-ratio:4/5;max-width:100%;background:var(--rule);position:relative;overflow:hidden;display:flex;align-items:flex-end;justify-content:center}
+.sp .photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.sp .photo .logo-mono{position:absolute;top:44%;left:50%;width:64px;transform:translate(-50%,-50%);color:var(--accent);opacity:.22}
+.sp .photo .ph{position:relative;font-family:var(--f-label);font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-mute);padding:16px}
+.sp .photo.has-img .logo-mono,.sp .photo.has-img .ph{display:none}
+.sp .role{font-family:var(--f-label);font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);margin:24px 0 6px}
+.sp h3{font-family:var(--f-display);font-weight:var(--display-w);font-size:30px;line-height:1.15;margin-bottom:12px}
+.sp p{font-size:15px;color:var(--ink-soft)}
+
+/* V · detalles */
+.details{padding-block:110px}
+.dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:64px}
+.dl > div{display:grid;grid-template-columns:120px minmax(0,1fr);gap:20px;padding-block:20px;border-top:1px solid var(--rule)}
+.dl dt{font-family:var(--f-label);font-size:11px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--accent);padding-top:4px}
+.dl dd{font-size:15.5px;min-width:0}
+.dl dd small{display:block;font-size:13px;color:var(--ink-mute)}
+.howto{margin-top:56px;border:1px solid var(--rule);padding:36px 40px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px}
+:root[data-estilo="web"] .howto{border-radius:16px}
+.howto .n{font-family:var(--f-display);font-weight:400;font-style:italic;color:var(--accent);font-size:28px;line-height:1;margin-bottom:10px}
+.howto p{font-size:14.5px}
+
+/* VI · cierre */
+.close{background:var(--close-bg);color:var(--close-fg);text-align:center;padding-block:110px 100px}
+.close .logo-mono{width:44px;margin:0 auto 40px;color:var(--close-mark)}
+.close h2{font-family:var(--f-display);font-weight:calc(var(--display-w) - 100);font-style:italic;font-size:clamp(30px,4.4vw,50px);line-height:1.2;max-width:20ch;margin:0 auto 44px}
+.close .btn{background:var(--close-fg);color:var(--close-bg);border-color:var(--close-fg)}
+.close .btn:hover{background:transparent;color:var(--close-fg)}
+.close .note{margin-top:22px;font-family:var(--f-label);font-size:11.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--close-mark)}
+footer{background:var(--close-bg);color:var(--close-fg);text-align:center;padding-block:0 56px}
+footer .inner{border-top:1px solid rgba(216,201,182,.25);padding-top:40px}
+footer .logo-word{width:110px;margin:0 auto 20px;color:var(--close-mark)}
+footer p{font-size:13px;max-width:52ch;margin:0 auto;opacity:.75}
+footer .legal{margin-top:22px;font-family:var(--f-label);font-size:11px;letter-spacing:.18em;text-transform:uppercase}
+footer .legal a{color:var(--close-mark);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}
+
+/* política de privacidad */
+.priv{background:var(--page);padding-block:90px 100px;border-top:1px solid var(--rule)}
+.priv .wrap{max-width:760px}
+.priv .eyebrow{color:var(--accent);margin-bottom:14px}
+.priv h2{font-family:var(--f-display);font-weight:var(--display-w);font-size:clamp(30px,4vw,44px);line-height:1.1;margin-bottom:36px}
+.priv h3{font-family:var(--f-label);font-size:11.5px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);margin:34px 0 10px}
+.priv p,.priv li{font-size:15.5px;color:var(--ink-soft)}
+.priv p + p{margin-top:12px}
+.priv ul{margin:10px 0 0 20px}
+.priv li{margin-bottom:6px}
+.priv .upd{margin-top:40px;font-size:13px;color:var(--ink-mute)}
+.priv .back{display:inline-block;margin-top:28px;font-family:var(--f-label);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--accent);text-decoration:none;border-bottom:1px solid currentColor;padding-bottom:3px}
+
+/* panel de edición */
+.ed{position:fixed;right:calc(16px + env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));z-index:100;width:min(330px,calc(100vw - 32px));background:#fff;color:#29201F;border:1px solid #D8C9B6;box-shadow:0 18px 50px rgba(41,32,31,.18);font-family:"Montserrat",system-ui,sans-serif;font-size:13px;line-height:1.5}
+.ed header{display:flex;align-items:center;justify-content:space-between;gap:8px;padding:12px 14px;background:#5B0B0B;color:#FCF7F3;cursor:pointer}
+.ed header b{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600}
+.ed header span{font-size:12px}
+.ed .bd{padding:14px;display:grid;gap:14px}
+.ed.min .bd{display:none}
+.ed label{display:grid;gap:5px;font-size:11px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:#7a6560}
+.ed input,.ed select{font:inherit;font-size:13px;letter-spacing:0;text-transform:none;color:#29201F;padding:8px 10px;border:1px solid #D8C9B6;background:#FCF7F3;width:100%}
+.ed .row{display:flex;gap:8px;flex-wrap:wrap}
+.ed button{font:inherit;font-size:12px;font-weight:600;padding:9px 12px;border:1px solid #5B0B0B;background:#fff;color:#5B0B0B;cursor:pointer}
+.ed button.pri{background:#5B0B0B;color:#FCF7F3}
+.ed button:disabled{opacity:.5;cursor:default}
+.ed .msg{font-size:12px;color:#5a4a46;min-height:18px}
+.ed .help{font-size:12px;color:#5a4a46}
+body.editing [data-edit]{outline:1px dashed rgba(91,11,11,.45);outline-offset:4px;cursor:text}
+body.editing [data-edit]:focus{outline:2px solid #5B0B0B;background:rgba(255,255,255,.06)}
+body.editing .sp .photo{cursor:pointer}
+body.editing .sp .photo::after{content:"Cambiar foto";position:absolute;top:12px;left:12px;font:600 11px/1 "Montserrat",sans-serif;letter-spacing:.1em;text-transform:uppercase;background:#5B0B0B;color:#FCF7F3;padding:7px 9px}
+
+@media (max-width:820px){
+  .who .grid,.mc{grid-template-columns:minmax(0,1fr);gap:18px}
+  .mc{padding-block:48px}
+  .mc .num{font-size:70px}
+  .grid3{grid-template-columns:minmax(0,1fr);gap:56px;max-width:440px}
+  .dl{grid-template-columns:minmax(0,1fr)}
+  .howto{grid-template-columns:minmax(0,1fr);padding:28px 22px;gap:24px}
+}
+@media (max-width:560px){
+  .wrap{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+  .hero{padding-block:64px 76px}
+  .facts{flex-direction:column}
+  .facts li{padding:0;border-left:0}
+  .who,.speakers,.details,.close{padding-block:80px}
+  .dl > div{grid-template-columns:minmax(0,1fr);gap:4px}
+  .btn{padding:16px 26px}
+  .top .wrap{height:60px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+
+<header class="top" id="top">
+  <div class="wrap">
+    <span class="logo logo-word" role="img" aria-label="House of Ōnna"></span>
+    <a class="link js-form" href="#reservar">Reservar plaza</a>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <span class="logo logo-mono mark" aria-hidden="true"></span>
+  <div class="wrap">
+    <p class="aviso"><span class="dot" aria-hidden="true"></span><span data-edit="aviso-plazas">Quedan 10 de 15 plazas</span><span class="sep" aria-hidden="true"></span><span data-edit="aviso-fecha">Inscripción hasta el jueves 26 de noviembre</span></p>
+    <p class="eyebrow" data-edit>House of Ōnna · Negocio</p>
+    <h1 data-edit>Marca personal, ventas y <em>liderazgo</em></h1>
+    <p class="sub" data-edit>Tres masterclasses en una mañana para hacer crecer tu negocio con criterio.</p>
+    <ul class="facts">
+      <li data-edit>Domingo 29 de noviembre</li>
+      <li data-edit>9:30 a 13:00</li>
+      <li data-edit><span class="pend">[Lugar]</span>, Mallorca</li>
+      <li data-edit>20 plazas</li>
+      <li data-edit>60 € + IVA</li>
+    </ul>
+    <a class="btn btn-on-dark js-form" href="#reservar">Reservar plaza</a>
+  </div>
+</section>
+
+<section class="who">
+  <div class="wrap grid">
+    <p class="eyebrow" data-edit>Para quién es</p>
+    <div>
+      <p class="lead" data-edit>Para emprendedoras, empresarias y profesionales con un negocio en marcha que quieren que se vea lo que hacen, venderlo con naturalidad y organizar su empresa para que no dependa solo de ellas.</p>
+      <p class="after" data-edit>Una mañana para aprender y conocer a otras mujeres con proyectos propios.</p>
+    </div>
+  </div>
+</section>
+
+<section class="prog" id="programa">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-edit>El programa</p>
+      <h2 data-edit>Tres <em>masterclasses</em></h2>
+    </div>
+
+    <article class="mc">
+      <div>
+        <div class="num">I</div>
+        <h3 data-edit>Marca personal</h3>
+        <p class="meta" data-edit>Con <b>Cristina Osorio</b><br><span class="pend">[hora]</span></p>
+      </div>
+      <div class="body">
+        <p data-edit>Cuando alguien busca tu producto o servicio, tu marca personal es lo que decide si esa persona se acordará de ti o no. En esta masterclass aprenderás a definir tu posicionamiento en redes: qué sabes hacer, qué te apasiona y quién es la persona detrás. Elegirás para quién es tu marca y qué parte de tu vida entra en ella. Después lo llevarás a tu perfil, para que la foto, la bio y lo que publicas vayan en la misma dirección.</p>
+        <p class="learn" data-edit>Aprenderás a</p>
+        <ul data-edit>
+          <li>Posicionar tu marca personal para que se entienda qué haces y para quién.</li>
+          <li>Llevar tu posicionamiento a tu perfil y a lo que publicas.</li>
+          <li>Crear contenido sin quemarte.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="mc">
+      <div>
+        <div class="num">II</div>
+        <h3 data-edit>Ventas</h3>
+        <p class="meta" data-edit>Con <b>Rocío D'yuanini</b><br><span class="pend">[hora]</span></p>
+      </div>
+      <div class="body">
+        <p data-edit>Tus clientas están encantadas contigo, pero desde fuera eso no se ve y vender te cuesta. En esta masterclass aprenderás a vender enseñando lo que ya pasa con tus clientas, sin tener que convencer a nadie. Descubrirás qué les das que nadie más les da y cómo contarlo para atraer a clientas que lleguen listas para trabajar contigo. Y verás de qué depende cobrar un precio alto, con casos de mujeres a las que ha acompañado.</p>
+        <p class="learn" data-edit>Aprenderás a</p>
+        <ul data-edit>
+          <li>Vender mostrando lo que consiguen tus clientas, sin sentir que convences.</li>
+          <li>Convertir tu diferencial en un mensaje que atraiga a clientas listas para comprar.</li>
+          <li>Subir tus precios sin perder clientas.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="mc">
+      <div>
+        <div class="num">III</div>
+        <h3 data-edit>Liderazgo</h3>
+        <p class="meta" data-edit>Con <b>Maritza Estacio</b><br><span class="pend">[hora]</span></p>
+      </div>
+      <div class="body">
+        <p data-edit>Las emprendedoras aguantamos, insistimos y no soltamos nuestro proyecto, pero llega un momento en que el negocio no puede depender solo de ti. En esta masterclass, práctica y en movimiento, aprenderás a construir la estructura que tu empresa necesita para crecer. Harás la prueba del autobús para ver cuánto depende tu negocio de ti, área por área, y con el juego de la delegación decidirás qué pasar a otras personas y hasta dónde. Terminarás con tu Mapa de liderazgo 2027: tu visión, tres objetivos y una meta por trimestre.</p>
+        <p class="learn" data-edit>Aprenderás a</p>
+        <ul data-edit>
+          <li>Ver cuánto depende tu negocio de ti, área por área.</li>
+          <li>Decidir qué delegar y hasta dónde, sin soltarlo todo de golpe.</li>
+          <li>Planificar tu 2027 en una página.</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="speakers">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-edit>Las ponentes</p>
+      <h2 data-edit>Quién da cada <em>masterclass</em></h2>
+    </div>
+    <div class="grid3">
+      <div class="sp">
+        <div class="photo" data-photo="cristina"><span class="logo logo-mono"></span><span class="ph">Foto pendiente</span></div>
+        <p class="role" data-edit>I · Marca personal</p>
+        <h3 data-edit>Cristina Osorio</h3>
+        <p data-edit>Estratega de redes y contenido. Fundadora de The Calm System y cofundadora de House of Ōnna.</p>
+      </div>
+      <div class="sp">
+        <div class="photo" data-photo="rocio"><span class="logo logo-mono"></span><span class="ph">Foto pendiente</span></div>
+        <p class="role" data-edit>II · Ventas</p>
+        <h3 data-edit>Rocío D'yuanini</h3>
+        <p data-edit>Consultora de negocio y coach de identidad. Lleva 19 años vendiendo y ha trabajado con más de 3.000 clientes.</p>
+      </div>
+      <div class="sp">
+        <div class="photo" data-photo="maritza"><span class="logo logo-mono"></span><span class="ph">Foto pendiente</span></div>
+        <p class="role" data-edit>III · Liderazgo</p>
+        <h3 data-edit>Maritza Estacio</h3>
+        <p data-edit>Fundadora de Indeleble. Dirigió en Colombia durante once años una empresa premiada con el Premio Nacional a la Excelencia de la Micro y Pequeña Empresa.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="details" id="detalles">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow" data-edit>Detalles</p>
+      <h2 data-edit>Lo que necesitas <em>saber</em></h2>
+    </div>
+    <dl class="dl">
+      <div><dt data-edit>Fecha</dt><dd data-edit>Domingo 29 de noviembre de 2026</dd></div>
+      <div><dt data-edit>Horario</dt><dd data-edit>9:30 a 13:00</dd></div>
+      <div><dt data-edit>Lugar</dt><dd data-edit><span class="pend">[Lugar]</span>, Mallorca</dd></div>
+      <div><dt data-edit>Plazas</dt><dd data-edit>20</dd></div>
+      <div><dt data-edit="limite-t">Inscripción</dt><dd data-edit="limite">Hasta el jueves 26 de noviembre</dd></div>
+      <div><dt data-edit>Precio</dt><dd data-edit>60 € + IVA<small>72,60 € en total</small></dd></div>
+      <div><dt data-edit>Pago</dt><dd data-edit>Transferencia bancaria<small><span class="pend">[IBAN y titular]</span></small></dd></div>
+      <div><dt data-edit>Incluye</dt><dd data-edit><span class="pend">[Café y materiales]</span></dd></div>
+      <div><dt data-edit>Qué traer</dt><dd data-edit>Ropa cómoda, porque en liderazgo hay dinámicas en movimiento, y el móvil.</dd></div>
+    </dl>
+    <div class="howto">
+      <div><div class="n">I</div><p data-edit>Rellena el formulario de inscripción con tus datos de facturación.</p></div>
+      <div><div class="n">II</div><p data-edit>Haz la transferencia de 72,60 € con el concepto «Taller 29N + tu nombre».</p></div>
+      <div><div class="n">III</div><p data-edit>Cuando la recibamos, te confirmamos la plaza por email y te enviamos la factura.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="close" id="reservar">
+  <div class="wrap">
+    <span class="logo logo-mono" role="img" aria-label="Monograma de House of Ōnna"></span>
+    <h2 data-edit>Una mañana para tu negocio, en buena compañía.</h2>
+    <a class="btn js-form" href="#reservar">Reservar plaza</a>
+    <p class="note" data-edit>20 plazas · 60 € + IVA</p>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap inner">
+    <span class="logo logo-word" role="img" aria-label="House of Ōnna"></span>
+    <p data-edit>House of Ōnna es un club privado para mujeres que reúne negocio, conexión y bienestar en una comunidad cuidada, con sede en Mallorca.</p>
+    <p class="legal"><a href="#privacidad" id="priv-link">Política de privacidad</a></p>
+  </div>
+</footer>
+
+<section class="priv" id="privacidad" hidden>
+  <div class="wrap">
+    <p class="eyebrow">Taller 29 de noviembre</p>
+    <h2>Política de <em>privacidad</em></h2>
+
+    <h3>Quién trata tus datos</h3>
+    <p>House of Ōnna Circle, S.L., con NIF B93914463 y domicilio en Calle Bellpuig, 18, bajo, 07014 Palma (Illes Balears). Puedes escribirnos a houseofonnaa@gmail.com.</p>
+
+    <h3>Qué datos recogemos</h3>
+    <p>Los que nos das en el formulario de inscripción:</p>
+    <ul>
+      <li>tu nombre y apellidos, email y teléfono;</li>
+      <li>si eres miembro de House of Ōnna;</li>
+      <li>tus datos de facturación: nombre o razón social, NIF o CIF y dirección fiscal;</li>
+      <li>el justificante de transferencia, si decides adjuntarlo.</li>
+    </ul>
+
+    <h3>Para qué los usamos</h3>
+    <ul>
+      <li>Para gestionar tu inscripción en el taller del 29 de noviembre, confirmar tu plaza y comprobar el pago.</li>
+      <li>Para emitir y enviarte la factura.</li>
+      <li>Para escribirte sobre el taller: cambios de horario, lugar o cualquier aviso práctico.</li>
+    </ul>
+    <p>No usamos tus datos para nada más ni te enviamos publicidad sin tu permiso.</p>
+
+    <h3>Por qué podemos usarlos</h3>
+    <ul>
+      <li>Para gestionar tu plaza, porque al inscribirte haces una reserva con nosotras: es la ejecución de un contrato (artículo 6.1.b del RGPD).</li>
+      <li>Para la factura, porque la ley nos obliga a emitirla y guardarla: es una obligación legal (artículo 6.1.c del RGPD).</li>
+    </ul>
+
+    <h3>Cuánto tiempo los guardamos</h3>
+    <p>Los datos de inscripción, hasta que termine el taller y se cierre cualquier gestión pendiente. Los datos de facturación, durante los plazos que exige la ley fiscal y mercantil, normalmente entre cuatro y seis años. Después los borramos.</p>
+
+    <h3>Con quién los compartimos</h3>
+    <p>No los vendemos ni los cedemos a nadie. Solo pueden acceder a ellos quienes nos ayudan a organizar el taller:</p>
+    <ul>
+      <li>la herramienta donde guardamos las inscripciones (Notion);</li>
+      <li>nuestra gestoría, para la facturación;</li>
+      <li>tu banco y el nuestro, por la transferencia.</li>
+    </ul>
+    <p>Notion tiene servidores en Estados Unidos y está adherida al Marco de Privacidad de Datos UE y EE. UU., que la Comisión Europea reconoce como garantía suficiente.</p>
+
+    <h3>Fotos durante el taller</h3>
+    <p>Podemos hacer fotos y vídeos del taller para las redes y la newsletter de House of Ōnna. Solo publicaremos imágenes en las que se te reconozca si nos das tu permiso.</p>
+
+    <h3>Tus derechos</h3>
+    <p>Puedes pedirnos en cualquier momento ver tus datos, corregirlos, borrarlos, limitar su uso, oponerte a que los usemos o llevártelos a otro sitio. Escríbenos a houseofonnaa@gmail.com indicando qué necesitas. Si crees que no hemos tratado bien tus datos, puedes reclamar ante la Agencia Española de Protección de Datos (aepd.es).</p>
+
+    <p class="upd">Última actualización: noviembre de 2026.</p>
+    <a class="back" href="#top" id="priv-close">Volver al taller</a>
+  </div>
+</section>
+
+<div class="ed min" id="ed" hidden>
+  <header id="ed-head"><b>Editar página</b><span id="ed-tog">Abrir</span></header>
+  <div class="bd">
+    <div class="row">
+      <button type="button" id="ed-mode">Editar textos</button>
+      <button type="button" class="pri" id="ed-save" disabled>Guardar cambios</button>
+    </div>
+    <p class="help" id="ed-help">Pulsa «Editar textos» y escribe encima de cualquier texto marcado. Con el modo activo, pulsa una foto de ponente para subirla.</p>
+    <label for="ed-estilo">Estilo
+      <select id="ed-estilo">
+        <option value="marca">Burdeos, con la letra de la web</option>
+        <option value="web">Negro, igual que la web de inscripción</option>
+      </select>
+    </label>
+    <label for="ed-form">Enlace del formulario de Notion
+      <input id="ed-form" type="url" placeholder="https://…notion.site/…" autocomplete="off">
+    </label>
+    <p class="msg" id="ed-msg" role="status"></p>
+  </div>
+</div>
+<input type="file" id="ed-file" accept="image/*" hidden>
+
+<script>
+(() => {
+  const DEF = { estilo: "marca", form: "", textos: {}, fotos: {} };
+  let state = JSON.parse(JSON.stringify(DEF));
+  let dirty = false, editing = false, art = null, assets = null, saving = false;
+  const $ = s => document.querySelector(s);
+  const nodes = [...document.querySelectorAll("[data-edit]")];
+  let auto = 0;
+  nodes.forEach(el => { el.dataset.key = el.dataset.edit ? el.dataset.edit : "t" + (auto++); });
+
+  const ALLOWED = new Set(["EM","B","STRONG","I","BR","SMALL","SPAN","LI"]);
+  function clean(html) {
+    const t = document.createElement("template");
+    t.innerHTML = html;
+    const walk = n => [...n.childNodes].forEach(c => {
+      if (c.nodeType === 1) {
+        walk(c);
+        if (!ALLOWED.has(c.tagName)) { c.replaceWith(...c.childNodes); return; }
+        const pend = c.tagName === "SPAN" && c.classList.contains("pend");
+        [...c.attributes].forEach(a => c.removeAttribute(a.name));
+        if (pend) c.className = "pend";
+      } else if (c.nodeType !== 3) c.remove();
+    });
+    walk(t.content);
+    return t.innerHTML;
+  }
+
+  function render() {
+    document.documentElement.dataset.estilo = state.estilo === "web" ? "web" : "marca";
+    nodes.forEach(el => { const v = state.textos[el.dataset.key]; if (typeof v === "string" && document.activeElement !== el) el.innerHTML = clean(v); });
+    const url = /^https:\/\//.test(state.form || "") ? state.form : "#reservar";
+    document.querySelectorAll(".js-form").forEach(a => {
+      a.href = url;
+      if (url.startsWith("https")) { a.target = "_blank"; a.rel = "noopener"; } else { a.removeAttribute("target"); }
+    });
+    document.querySelectorAll("[data-photo]").forEach(box => {
+      const src = state.fotos[box.dataset.photo];
+      let img = box.querySelector("img");
+      if (src) {
+        if (!img) { img = document.createElement("img"); img.alt = ""; box.prepend(img); }
+        img.src = src; box.classList.add("has-img");
+      } else if (img) { img.remove(); box.classList.remove("has-img"); }
+    });
+    $("#ed-estilo").value = document.documentElement.dataset.estilo;
+    if (document.activeElement !== $("#ed-form")) $("#ed-form").value = state.form || "";
+  }
+
+  const msg = t => { $("#ed-msg").textContent = t; };
+  const mark = () => { dirty = true; $("#ed-save").disabled = false; msg("Hay cambios sin guardar."); };
+
+  // barra superior: cambia de color al salir de la cabecera
+  const top = $("#top"), hero = $(".hero");
+  const io = new IntersectionObserver(([e]) => top.classList.toggle("solid", !e.isIntersecting), { rootMargin: "-70px 0px 0px 0px" });
+  io.observe(hero);
+
+  // estado guardado
+  fetch("estado.json", { cache: "no-store" }).then(r => r.ok ? r.json() : null).then(d => {
+    if (d && typeof d === "object") state = Object.assign({}, DEF, d, { textos: Object.assign({}, d.textos), fotos: Object.assign({}, d.fotos) });
+    render();
+  }).catch(() => render());
+
+  // edición
+  nodes.forEach(el => {
+    el.addEventListener("input", () => { state.textos[el.dataset.key] = clean(el.innerHTML); mark(); });
+    el.addEventListener("paste", e => {
+      e.preventDefault();
+      const txt = (e.clipboardData || window.clipboardData).getData("text/plain");
+      document.execCommand("insertText", false, txt);
+    });
+  });
+  function setEditing(on) {
+    editing = on;
+    document.body.classList.toggle("editing", on);
+    nodes.forEach(el => { if (on) el.setAttribute("contenteditable", "true"); else el.removeAttribute("contenteditable"); });
+    $("#ed-mode").textContent = on ? "Terminar de editar" : "Editar textos";
+  }
+  $("#ed-mode").addEventListener("click", () => setEditing(!editing));
+  $("#ed-head").addEventListener("click", () => { const ed = $("#ed"); ed.classList.toggle("min"); $("#ed-tog").textContent = ed.classList.contains("min") ? "Abrir" : "Cerrar"; });
+  $("#ed-estilo").addEventListener("change", e => { state.estilo = e.target.value; render(); mark(); });
+  $("#ed-form").addEventListener("input", e => { state.form = e.target.value.trim(); mark(); });
+  $("#ed-form").addEventListener("change", () => { if (state.form && !/^https:\/\//.test(state.form)) msg("El enlace tiene que empezar por https://"); else render(); });
+  document.addEventListener("click", e => { if (editing && e.target.closest("a")) e.preventDefault(); }, true);
+
+  let photoKey = null;
+  document.querySelectorAll("[data-photo]").forEach(box => box.addEventListener("click", () => {
+    if (!editing) return;
+    if (!assets) { msg("Desde aquí no se pueden subir fotos. Pásamelas y las pongo yo."); return; }
+    photoKey = box.dataset.photo; $("#ed-file").value = ""; $("#ed-file").click();
+  }));
+  $("#ed-file").addEventListener("change", async e => {
+    const f = e.target.files && e.target.files[0];
+    if (!f || !photoKey) return;
+    msg("Subiendo foto…");
+    try { const r = await assets.upload(f); state.fotos[photoKey] = r.url; render(); mark(); }
+    catch (err) { msg("No se ha podido subir la foto (" + (err && err.code || "error") + ")."); }
+  });
+
+  $("#ed-save").addEventListener("click", async () => {
+    if (!art || saving || !dirty) return;
+    if (state.form && !/^https:\/\//.test(state.form)) { msg("Revisa el enlace del formulario: tiene que empezar por https://"); return; }
+    saving = true; $("#ed-save").disabled = true; msg("Guardando…");
+    try {
+      try { sessionStorage.setItem("t29n-borrador", JSON.stringify(state)); } catch (_) {}
+      await art.publish({ "estado.json": { content: JSON.stringify(state, null, 1), contentType: "application/json" } });
+      dirty = false; msg("Guardado. Así lo verá todo el mundo.");
+      try { sessionStorage.removeItem("t29n-borrador"); } catch (_) {}
+    } catch (err) {
+      const c = err && err.code;
+      if (c === "conflict") msg("Alguien ha guardado a la vez. La página se recarga con la versión nueva.");
+      else if (c === "not_writer" || c === "not_granted") { msg("Esta vista es solo de lectura."); $("#ed").hidden = true; }
+      else if (c === "capability_disabled") msg("Aquí no se puede guardar. Abre la página desde claude.ai.");
+      else msg("No se ha guardado (" + (c || "error") + "). Prueba otra vez en un momento.");
+      $("#ed-save").disabled = !dirty;
+    }
+    saving = false;
+  });
+
+  // política de privacidad: se abre con #privacidad (también desde el formulario de Notion)
+  const priv = $("#privacidad");
+  function showPriv(scroll) {
+    const on = location.hash === "#privacidad";
+    priv.hidden = !on;
+    if (on && scroll) priv.scrollIntoView();
+  }
+  $("#priv-link").addEventListener("click", e => { e.preventDefault(); priv.hidden = false; priv.scrollIntoView(); try { history.replaceState(null, "", "#privacidad"); } catch (_) {} });
+  $("#priv-close").addEventListener("click", e => { e.preventDefault(); priv.hidden = true; window.scrollTo(0, 0); try { history.replaceState(null, "", location.pathname + location.search); } catch (_) {} });
+  window.addEventListener("hashchange", () => showPriv(true));
+  showPriv(true);
+
+  // el panel solo aparece para quien puede guardar
+  if (!/[?&]clean=1/.test(location.search) && window.claude && typeof window.claude.use === "function") {
+    window.claude.use("artifact").then(async a => {
+      if (!a) return;
+      art = a;
+      let canEdit = true;
+      try { const u = await window.claude.use("user"); if (u && typeof u.canEdit === "function") { const v = await u.canEdit(); if (v === false) canEdit = false; } } catch (_) {}
+      if (!canEdit) return;
+      $("#ed").hidden = false;
+      try { const b = sessionStorage.getItem("t29n-borrador"); if (b) { state = Object.assign({}, DEF, JSON.parse(b)); render(); mark(); msg("He recuperado cambios que no se llegaron a guardar."); } } catch (_) {}
+      window.claude.use("assets").then(x => { assets = x; }).catch(() => {});
+    }).catch(() => {});
+  }
+})();
+</script>
+
+</body>
+</html>
